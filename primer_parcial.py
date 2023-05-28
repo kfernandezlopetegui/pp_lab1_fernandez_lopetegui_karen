@@ -1,6 +1,8 @@
 import re
 import json
 
+ruta_archivo = "primer_parcial\pp_lab1_fernandez_lopetegui_karen\dt.json"
+
 
 def imprimir_dato(dato: any) -> None:
     '''
@@ -1073,7 +1075,7 @@ def dream_team_app(nombre_archivo: str) -> None:
                 mostrar_y_calcular_mayor_por_clave_estadisticas(
                     nombre_archivo, "bloqueos_totales")
             case 15:
-                mostrar_y_calcular_mayor_por_clave_estadisticas(
+               mostrar_mayor_por_parametro(
                     nombre_archivo, "porcentaje_tiros_libres")
             case 16:
                 mostrar_y_calcular_promedio_sin_el_menor(
@@ -1081,7 +1083,7 @@ def dream_team_app(nombre_archivo: str) -> None:
             case 17:
                 mostrar_y_calcular_mayor_logros(nombre_archivo)
             case 18:
-                mostrar_y_calcular_mayor_por_clave_estadisticas(
+                mostrar_mayor_por_parametro(
                     nombre_archivo, "porcentaje_tiros_triples")
             case 19:
                 mostrar_y_calcular_mayor_por_clave_estadisticas(
@@ -1104,7 +1106,7 @@ def main() -> None:
     No recibe parametros
     No tiene retorno
     '''
-    dream_team_app("primer_parcial\dt.json")
+    dream_team_app(ruta_archivo)
 
 
 main()
